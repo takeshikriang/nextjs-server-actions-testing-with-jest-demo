@@ -1,9 +1,13 @@
+import { MyClientComponent } from 'components/my-client-component';
+import { MyServerComponent } from 'components/my-server-component';
+
 export default function Home() {
   return (
-    <main>
-      <div className='container p-4 mx-auto'>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    <div className='container p-4 mx-auto'>
+      <div className='space-y-8'>
+        <MyServerComponent />
+        <MyClientComponent />
       </div>
-    </main>
+    </div>
   );
 }
